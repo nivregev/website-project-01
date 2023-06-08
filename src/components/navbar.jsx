@@ -1,12 +1,14 @@
+import { Link, NavLink } from "react-router-dom";
+
 const Navbar = () => {
   return (
-    <nav class="navbar navbar-expand-sm navbar-light bg-light shadow-sm">
-      <div Card class="container-fluid">
-        <a class="navbar-brand" href="#">
-          React <i className="bi bi-geo-fill"></i> App
-        </a>
+    <nav className="navbar navbar-expand-sm navbar-light bg-light shadow-sm">
+      <div Card className="container-fluid">
+        <Link to="/" className="navbar-brand">
+          Project01 <i className="bi bi-geo-fill"></i> App
+        </Link>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarsExample03"
@@ -18,25 +20,29 @@ const Navbar = () => {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarsExample03">
-          <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+          <ul className="navbar-nav me-auto mb-2 mb-sm-0">
+            <li className="nav-item">
+              <NavLink to="about" className="nav-link">
                 About
-              </a>
+              </NavLink>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <NavLink to="my-cards" className="nav-link">
                 My-Cards
-              </a>
+              </NavLink>
             </li>
           </ul>
 
-          <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
-            <li class="nav-item me-0">
-              <a class="nav-link disabled">Sing-In</a>
+          <ul className="navbar-nav ms-auto mb-2 mb-sm-0">
+            <li className="nav-item me-0">
+              <NavLink to="sing-in" className="nav-link ">
+                Sing-In
+              </NavLink>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Sing-Up</a>
+            <li className="nav-item">
+              <NavLink to="sing-up" className="nav-link ">
+                Sing-Up
+              </NavLink>
             </li>
           </ul>
         </div>
