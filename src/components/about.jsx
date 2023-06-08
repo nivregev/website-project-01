@@ -1,8 +1,15 @@
+import PageHeader from "./common/pageHeader";
+
 const About = () => {
   return (
-    <div>
-      <h1>About Page</h1>
-    </div>
+    <PageHeader
+      title={
+        <>
+          About Project01 <i className="bi bi-geo-fill"></i> App
+        </>
+      }
+      description={" test my About description"}
+    />
   );
 };
 
