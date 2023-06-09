@@ -35,13 +35,13 @@ const Navbar = () => {
 
           <ul className="navbar-nav ms-auto mb-2 mb-sm-0">
             <li className="nav-item me-0">
-              <NavLink to="sing-in" className="nav-link ">
-                Sing-In
+              <NavLink to="sign-in" className="nav-link ">
+                Sign-In
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="sing-up" className="nav-link ">
-                Sing-Up
+              <NavLink to="sign-up" className="nav-link ">
+                Sign-Up
               </NavLink>
             </li>
           </ul>
