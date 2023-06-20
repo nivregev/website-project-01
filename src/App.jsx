@@ -1,13 +1,14 @@
 import "./App.css";
+
 import Home from "./components/home";
 import About from "./components/about";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import MyCards from "./components/my-cards";
+import SignUp from "./components/sign-up";
+import SignIn from "./components/sign-in";
 
 import { Route, Routes } from "react-router-dom";
-import SignIn from "./components/sign-in";
-import SignUp from "./components/sign-up";
 
 function App() {
   return (
